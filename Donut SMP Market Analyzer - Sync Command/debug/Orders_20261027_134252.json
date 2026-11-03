@@ -1,0 +1,96 @@
+{
+  "url": "https://donutmeta.com/orders",
+  "final_url": "https://donutmeta.com/orders",
+  "errors": [
+    "networkidle wait: TimeoutError"
+  ],
+  "json_records": 0,
+  "dom_rows": 0,
+  "sample_dom_rows": [],
+  "responses": [
+    {
+      "url": "https://donutmeta.com/routes.json",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json"
+    },
+    {
+      "url": "https://donutmeta.com/api/iconpicks",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://donutmeta.com/gamedata.json?v=3",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json"
+    },
+    {
+      "url": "https://donutmeta.com/enchants.json?v=2",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json"
+    },
+    {
+      "url": "https://donutmeta.com/texmap.json?v=4",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json"
+    },
+    {
+      "url": "https://donutmeta.com/models.json",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json"
+    },
+    {
+      "url": "https://donutmeta.com/cdn-cgi/rum?",
+      "status": 204,
+      "type": "xhr",
+      "content_type": "text/plain"
+    },
+    {
+      "url": "https://data.donutmeta.com/live/version.json.gz",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://donutmeta.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.1325683039108918:1793067315:A_mHLQg8T5MXH58NzDRxQf2IV8r_POBIha6cY8zCcCo/a50e5922196e5ac0",
+      "status": 200,
+      "type": "xhr",
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://data.donutmeta.com/book/full/603.json.gz",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://donutmeta.com/villager_trades.json?v=1",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json"
+    },
+    {
+      "url": "https://donutmeta.com/auth/me",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://donutmeta.com/api/processes",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://data.donutmeta.com/live/version.json.gz",
+      "status": 200,
+      "type": "fetch",
+      "content_type": "application/json; charset=utf-8"
+    }
+  ]
+}

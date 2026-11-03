@@ -1,7 +1,0 @@
-GenVarients (Help/Estimate/Generate)
-DMA> GenVarients Help
- - GenVarients Estimate - Estimating time to run 'GenVarients Generate'
- - GenVarients Generate - Generates all possiable item type combinations
-
-DMA> GenVarients Estimate
-'5m 31s' for full generation

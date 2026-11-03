@@ -79,7 +79,7 @@ clear terminal window ever time graph is changed so no lag
 
 |                               **Individual Buy - Order**                                      |
 |---------------------------------------|~(5m)|~(1h)| ~(6h) |Daily Low  |Weekly Low |Monthly Low|
-|Diamond                                | ~405| ~400|   ~390|14 Aug 2200|18 Aug 7000|27 Aug 4000|
+|Diamond Sword                          | ~405| ~400|   ~390|14 Aug 2200|18 Aug 7000|27 Aug 4000|
 |Sharpness 5                            | ~405| ~400|   ~390|19 Aug 3000|12 Sep 1200|14 Aug 2300|
 |Unbreaking 3                           | ~405| ~400|   ~495|21 Aug 1900|2 Sep  8000|13 Sep 1700|
 =================================================================================================

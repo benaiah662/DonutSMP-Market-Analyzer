@@ -1,0 +1,8 @@
+# Items to search for on Orders - one per line. Lines starting with # are ignored.
+# Orders is searched for each item and only the FIRST page of results is read.
+# (AH and the Craft/Smelt/Villager/Potions pages are always read in full.)
+# Type  Sync Orders diamond sword  to search a single item without editing this file,
+# or  Sync Orders All  to read everything.
+Diamond Sword
+Netherite Ingot
+Enchanted Golden Apple

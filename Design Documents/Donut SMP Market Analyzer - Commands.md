@@ -1,5 +1,7 @@
 Donut SMP Market Analyzer
 
+Arbatrage Profit
+
 needs to:
 
 delete really old stuff on the window at a certain point because it causes terminal window lag at a certain length
