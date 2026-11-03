@@ -1,0 +1,210 @@
+# ============================================================================
+#  DASHBOARD DATA  -  edit this file, then restart the dashboard
+#  Lines starting with # are notes and are ignored. Spacing does not matter.
+# ============================================================================
+
+title:   AH ~ DIAMOND SWORD ~ Sharpness V ~ Unbreaking III
+width:   130        # total characters per line. Plot area = width - 10, so
+                    # 130 (-> 120) divides evenly into 30, 24, 12, 10... columns.
+                    # Your terminal window must be at least this many columns wide.
+periods: 1d, 7d, 30d, 90d, 180d, 365d
+
+# ----------------------------------------------------------------------------
+#  AXES (optional) - the bottom row of a period's graph.
+#  Periods with no [axis] block use the default  Date: 01 02 ... 30.
+#  Label: 3-8 characters. The number of points = how many numbers each
+#  graph in that period needs.
+#  snapshots: (optional) bars per point, e.g. 8 per day = one every 3 hours.
+#  Then each graph needs points x snapshots numbers, in time order.
+# ----------------------------------------------------------------------------
+
+[axis 1d]
+label:  Hours:
+points: 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+
+[axis 7d]
+label:  Days:
+points: Mon Tue Wed Thu Fri Sat Sun
+snapshots: 8        # 8 per day = one every 3 hours (00 03 06 09 12 15 18 21)
+
+[axis 90d]
+label:  Weeks:
+points: 01 02 03 04 05 06 07 08 09 10 11 12 13
+
+[axis 180d]
+label:  Weeks:
+points: 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+
+[axis 365d]
+label:  Months:
+points: Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+
+# ----------------------------------------------------------------------------
+#  GRAPHS  -  one block per graph type + period.
+#  One number (0 to 120) per axis column, in order. Split over as many lines
+#  as you like. Bars are drawn in steps of 10.
+#  Heading format:  [graph <Graph Type Name> <period>]
+# ----------------------------------------------------------------------------
+
+[graph Profit Graph 1d]
+ 60  70  90  95 100 105 120 105  90 100
+105 120 120 120 105  85  90  85  70  50
+ 55  75  90  70
+
+[graph Profit Graph 7d]
+ 35  40  60  70  60  50  55  40
+ 15  20  40  50  50  35  30  15
+  5   5   5  10  15  10   5   5
+ 15  25  35  40  45  40  20  20
+  5   5   5  25  20  15  10   5
+  5   5  15  20  25  15   5   5
+ 20  20  35  35  45  40  30  15
+
+[graph Profit Graph 30d]
+ 40  60  80  95  80  95 110 115 100  95
+ 75  90  80  75  85  70  85  75  90  90
+105  95  80  95 115 120 110 115 100 115
+
+[graph Profit Graph 90d]
+ 55  45  35  40  45  40  60  50  45  50
+ 40  35  40
+
+[graph Profit Graph 180d]
+ 60  60  65  70  85  90 100  90 100  85
+ 90  80  70  60  50  45  55  40  55  55
+ 55  55  60  55  60  55
+
+[graph Profit Graph 365d]
+ 60  65  60  60  60  55  60  60  70  85
+ 70  60
+
+[graph Vol Graph 1d]
+ 60  55  60  35  50  30  35  50  45  45
+ 55  35  55  45  40  65  50  60  50  30
+  5  20  40  25
+
+[graph Vol Graph 7d]
+ 45  65  75  70  85  70  70  50
+ 60  75  90  95  90  85  75  75
+ 50  50  75  70  70  70  50  45
+ 20  20  40  50  50  45  30  20
+ 50  55  70  70  80  75  65  60
+ 90  85 115 110 120 110 100  95
+110 120 120 120 120 120 120 100
+
+[graph Vol Graph 30d]
+ 50  55  50  40  25  15   5   5   5   5
+ 15  35  25  20  20   5   5  10  25  30
+ 45  65  65  50  65  80  65  75  90  95
+
+[graph Vol Graph 90d]
+ 55  60  70  45  40  25  10  15  20  15
+  5   5  10
+
+[graph Vol Graph 180d]
+ 45  35  35  35  25  10  20  10   5   5
+  5  10  10  20  20  20  10  15  25  15
+ 30  40  35  30  20  20
+
+[graph Vol Graph 365d]
+ 55  45  50  35  25  35  45  40  30  30
+ 35  40
+
+# ----------------------------------------------------------------------------
+#  TABLES  -  one block per period (shown under that period's graph).
+#    section: <title>                    starts a table
+#    columns: <headings separated by |>      (any number up to 6)
+#    <name> | value | value | ...            one line per row, one value per column
+#    footer:  <text for the bottom line>
+#  Cells are padded automatically - no need to line things up exactly.
+# ----------------------------------------------------------------------------
+
+[table 1d]
+
+section: Individual Buy - Order
+columns:     | Hourly Low  | 6-Hour Low  | 8h Low      | 12h Low     | Daily Low
+Diamond      | 25 Aug 3205 | 8 Aug  1179 | 6 Nov  7849 | 21 Oct 8849 | 2 Nov  8976
+Sharpness 5  | 15 Sep 3145 | 14 Nov 2908 | 27 Sep 8776 | 26 Sep 9275 | 13 Nov 4487
+Unbreaking 3 | 10 Aug 4452 | 6 Nov  2643 | 17 Sep 1052 | 1 Oct  8015 | 2 Sep  4493
+
+section: Sell Windows - DIAMOND SWORD ~ Sharpness V ~ Unbreaking III
+columns:      | Hourly Low  | 6-Hour Low  | 8h Low      | 12h Low     | Daily Low
+Auction House | 25 Oct 5854 | 13 Aug 2217 | 3 Sep  4805 | 8 Aug  8157 | 3 Sep  4981
+Orders        | 12 Nov 3084 | 19 Nov 3223 | 24 Nov 8239 | 2 Oct  9849 | 28 Nov 3995
+
+footer: Vol +4%  ~  Price +2%  ~  Peak Margin (Hourly, $12, 20:00)
+
+[table 7d]
+
+section: Individual Buy - Order
+columns:     | 8h Low      | 12h Low     | Daily Low   | 3-Day Low   | Weekly Low
+Diamond      | 16 Aug 7036 | 1 Sep  2449 | 12 Sep 6827 | 25 Sep 9725 | 18 Oct 4654
+Sharpness 5  | 4 Aug  8424 | 6 Oct  7575 | 27 Nov 4714 | 7 Nov  6825 | 24 Aug 1457
+Unbreaking 3 | 16 Sep 4062 | 22 Aug 8699 | 7 Oct  8327 | 26 Oct 6974 | 3 Sep  2673
+
+section: Sell Windows - DIAMOND SWORD ~ Sharpness V ~ Unbreaking III
+columns:      | 8h Low      | 12h Low     | Daily Low   | 3-Day Low   | Weekly Low
+Auction House | 28 Sep 2222 | 25 Sep 4417 | 11 Sep 8907 | 20 Aug 8855 | 21 Oct 2389
+Orders        | 22 Aug 3006 | 18 Nov 7357 | 16 Sep 8109 | 26 Oct 2421 | 26 Nov 8588
+
+footer: Vol +12%  ~  Price +5%  ~  Peak Margin (Daily, $48, Sat 20:00)
+
+[table 30d]
+
+section: Individual Buy - Order
+columns:     | 8h Low      | 12h Low     | Daily Low   | Weekly Low  | Monthly Low
+Diamond      | 7 Oct  3394 | 18 Nov 5783 | 6 Sep  1451 | 5 Nov  3394 | 20 Nov 6741
+Sharpness 5  | 12 Nov 9215 | 13 Oct 8937 | 5 Aug  1233 | 26 Aug 9627 | 24 Sep 8107
+Unbreaking 3 | 13 Oct 1439 | 27 Aug 3604 | 9 Sep  5799 | 17 Sep 6341 | 9 Nov  3147
+
+section: Sell Windows - DIAMOND SWORD ~ Sharpness V ~ Unbreaking III
+columns:      | 8h Low      | 12h Low     | Daily Low   | Weekly Low  | Monthly Low
+Auction House | 23 Nov 1046 | 16 Aug 9555 | 22 Nov 9219 | 5 Sep  9577 | 17 Aug 8211
+Orders        | 8 Oct  2846 | 6 Sep  6705 | 25 Sep 3823 | 5 Nov  2971 | 18 Aug 6340
+
+footer: Vol +30%  ~  Price +17%  ~  Peak Margin (Weekly, $115, Sat 20:00)
+
+[table 90d]
+
+section: Individual Buy - Order
+columns:     | 8h Low      | 12h Low     | Weekly Low  | Monthly Low | Qtr Low
+Diamond      | 27 Oct 6678 | 25 Oct 5026 | 16 Aug 1930 | 8 Sep  5537 | 2 Aug  9318
+Sharpness 5  | 4 Sep  2075 | 27 Sep 8024 | 25 Aug 8262 | 11 Sep 5541 | 15 Nov 9319
+Unbreaking 3 | 12 Sep 1601 | 22 Sep 7668 | 18 Sep 8332 | 5 Nov  2992 | 13 Nov 6177
+
+section: Sell Windows - DIAMOND SWORD ~ Sharpness V ~ Unbreaking III
+columns:      | 8h Low      | 12h Low     | Weekly Low  | Monthly Low | Qtr Low
+Auction House | 6 Aug  6678 | 16 Nov 5050 | 3 Sep  5960 | 26 Aug 3530 | 23 Oct 3342
+Orders        | 8 Sep  2135 | 15 Nov 8916 | 8 Aug  7525 | 16 Sep 4665 | 6 Nov  9447
+
+footer: Vol +22%  ~  Price +9%  ~  Peak Margin (Monthly, $240, Sat 20:00)
+
+[table 180d]
+
+section: Individual Buy - Order
+columns:     | 8h Low      | 12h Low     | Monthly Low | Qtr Low     | Half-Yr Low
+Diamond      | 2 Oct  1854 | 28 Oct 5749 | 8 Sep  4109 | 6 Sep  7360 | 16 Aug 7905
+Sharpness 5  | 2 Nov  5072 | 6 Nov  2137 | 2 Oct  4906 | 24 Nov 5210 | 14 Nov 5807
+Unbreaking 3 | 28 Oct 3393 | 5 Nov  1809 | 5 Sep  8852 | 18 Aug 5591 | 7 Sep  1271
+
+section: Sell Windows - DIAMOND SWORD ~ Sharpness V ~ Unbreaking III
+columns:      | 8h Low      | 12h Low     | Monthly Low | Qtr Low     | Half-Yr Low
+Auction House | 9 Sep  9611 | 24 Nov 1463 | 15 Sep 1990 | 2 Sep  5619 | 12 Sep 2510
+Orders        | 7 Oct  3520 | 12 Nov 8937 | 11 Sep 1574 | 1 Nov  6856 | 23 Oct 1549
+
+footer: Vol +35%  ~  Price +19%  ~  Peak Margin (Qtr, $430, Sat 20:00)
+
+[table 365d]
+
+section: Individual Buy - Order
+columns:     | 8h Low      | 12h Low     | Monthly Low | Qtr Low     | Yearly Low
+Diamond      | 19 Nov 6045 | 5 Oct  3282 | 7 Oct  6218 | 3 Oct  1319 | 11 Nov 8216
+Sharpness 5  | 25 Aug 7264 | 22 Sep 1385 | 17 Oct 9392 | 3 Aug  4744 | 4 Aug  5351
+Unbreaking 3 | 9 Oct  5092 | 28 Nov 5213 | 9 Sep  7918 | 28 Oct 7651 | 5 Nov  6358
+
+section: Sell Windows - DIAMOND SWORD ~ Sharpness V ~ Unbreaking III
+columns:      | 8h Low      | 12h Low     | Monthly Low | Qtr Low     | Yearly Low
+Auction House | 22 Nov 3269 | 5 Sep  2553 | 26 Sep 7968 | 3 Oct  1275 | 21 Aug 5268
+Orders        | 13 Aug 4058 | 1 Nov  3307 | 3 Oct  2993 | 15 Aug 6556 | 18 Nov 5388
+
+footer: Vol +41%  ~  Price +26%  ~  Peak Margin (Yearly, $910, Sat 20:00)
